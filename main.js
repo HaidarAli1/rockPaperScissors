@@ -12,4 +12,26 @@ function getComputerChoice() {
        }
 }
 
-console.log(getComputerChoice());
+function playerChoice() {
+    choice = prompt("What do you choose? Rock, Paper, or Scissors?");
+    choice = choice.toLowerCase();
+
+    if (viableAnswer(choice) == true) {
+        return choice;
+    }
+
+    return playerChoice();
+}
+
+function viableAnswer(playerInput) {
+
+    if (playerInput === "rock" || playerInput === "paper" || playerInput === "scissors") {
+        return true;
+    } else {
+        alert("The input recieved is invalid, you'll have to re enter your answer.");
+        return false;
+    }
+    
+}
+
+console.log(playerChoice());
