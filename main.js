@@ -98,13 +98,15 @@ function game() {
     let playerScore = 0;
     let winnerValue = 0;
 
-    while (compScore != 3 || playerScore != 3) {
+    while ((compScore != 3) && (playerScore != 3)) {
         winnerValue  = round();
         
         if (winnerValue == 1) {
-            playerScore = playerScore++;
+            playerScore = playerScore + 1;
+            console.log(`playerScore: ${playerScore}`);
         } else if (winnerValue == 2) {
-            compScore = compScore++;
+            compScore = compScore + 1;
+            console.log(`compScore: ${compScore}`);
         }
     }
 
@@ -116,4 +118,4 @@ function game() {
 
 }
 
-console.log(round());
+console.log(game());
