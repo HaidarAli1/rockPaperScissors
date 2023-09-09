@@ -6,9 +6,12 @@ This project is just to get the fundementals of Javascript and the basic nomencl
 
 Project Notes:
 
-Possible Addtions to add,
+Feature List:
 
 - Main Page
 - Having a hover feature on button to access game
 - Each buttons (Playing Cards), are animated in a way to simulate a playing card deck.
 - Hover animation of each "card", increases size, and color change maybe.
+- Computer has their own set of flipped over "cards", and it animates to the middle of the screen, next to userPick.
+
+
