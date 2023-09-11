@@ -1,0 +1,36 @@
+* {
+    font-family:'Courier New', Courier, monospace;
+}
+
+button {
+    all: unset;
+}
+
+p {
+    all: unset;
+}
+
+body {
+    margin: 0px;
+    border: 0px;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexCards {
+    margin-top: auto;
+    margin-bottom: 50px;
+    padding: 10vh 15vh;
+    background-color: white;
+    display: flex;
+    gap: 150px;
+}
+
+.card {
+    border: solid pink;
+    color: black;
+}
