@@ -13,7 +13,8 @@ function getComputerChoice() {
 }
 
 function playerChoice() {
-    choice = prompt("What do you choose? Rock, Paper, or Scissors?");
+
+    /*choice = prompt("What do you choose? Rock, Paper, or Scissors?");
     choice = choice.toLowerCase();
 
     if (viableAnswer(choice) == true) {
@@ -21,6 +22,8 @@ function playerChoice() {
     }
 
     return playerChoice();
+    */
+
 }
 
 function viableAnswer(playerInput) {
@@ -115,7 +118,16 @@ function game() {
     } else if (playerScore == 3) {
         console.log(`You won! You had a score of ${playerScore}. The computer had a score of ${compScore}`);
     }
-
 }
 
-console.log(game());
+const playerCards = document.querySelectorAll('button');
+
+playerCards.forEach((playercard) => {
+    playercard.addEventListener('mouseover', (event) => {
+        //HOVER ANIMATION
+    });
+
+    playercard.addEventListener('click', (event) => {
+        console.log(event.target.getAttribute('data-value'));
+    });
+}); 
