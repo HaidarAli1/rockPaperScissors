@@ -4,10 +4,16 @@
 
 button {
     all: unset;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
 p {
     all: unset;
+    font-weight: bold;
 }
 
 body {
@@ -21,10 +27,15 @@ body {
     align-items: center;
 }
 
+img {
+    width: 150px;
+    height: 150px;
+}
+
 .flexCards {
     margin-top: auto;
     margin-bottom: 50px;
-    padding: 10vh 15vh;
+    padding: 20px;
     background-color: white;
     display: flex;
     gap: 150px;

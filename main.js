@@ -120,7 +120,7 @@ function game() {
     }
 }
 
-const playerCards = document.querySelectorAll('button');
+const playerCards = document.querySelectorAll('.card');
 
 playerCards.forEach((playercard) => {
     playercard.addEventListener('mouseover', (event) => {
